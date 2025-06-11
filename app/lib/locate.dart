@@ -1,5 +1,4 @@
 import 'dart:convert';
-
 import 'package:app/machine_view.dart';
 import 'package:flutter/material.dart';
 import 'client.dart';

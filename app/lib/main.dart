@@ -1,3 +1,4 @@
+import 'package:app/dashboard_page.dart';
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'sign_in.dart';
@@ -72,11 +73,14 @@ class _MyHomePageState extends State<MyHomePage> {
   void _goToSignIn(bool newAccount, bool pass) {
     Navigator.push(
       context,
+      // MaterialPageRoute(
+      //   builder: (context) => SignIn(
+      //     title: newAccount ? 'Sign Up' : 'Sign In',
+      //     newAccount: newAccount,
+      //   ),
+      // ),
       MaterialPageRoute(
-        builder: (context) => SignIn(
-          title: newAccount ? 'Sign Up' : 'Sign In',
-          newAccount: newAccount,
-        ),
+        builder: (context) => DashboardPage(),
       ),
     );
   }
